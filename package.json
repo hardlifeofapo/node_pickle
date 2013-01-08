@@ -1,5 +1,5 @@
 {
-  "name": "pickle",
+  "name": "pickleBase64",
   "description": "A Python pickled object <-> JSON transport. Writing/reading Python pickled objects to Javascript objects.",
   "version": "0.2.0",
   "repository": {
