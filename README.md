@@ -1,9 +1,9 @@
-# node_pickle
-A really, admittedly, lazy interface into Python for pickling/unpickling an object.
+# pickleBase64
+A really, admittedly, lazy interface into Python for pickling/unpickling an object, based on Matt Robenolt's node_pickle
 The interface mimics Python's pickle.dumps & pickle.loads.
 
-## Install
-`$ npm install pickle`
+node_pickle seems to have some trouble when trying to unpickle an string containing non-ascii chars after base64 deserialization, so the base64 raw string is passed into the converter.
+
 
 ## Usage
 ```javascript
@@ -22,6 +22,7 @@ pickle.dumps({hello: "world"}, function(pickled) {
 (The MIT License)
 
 Copyright (c) 2011 Matt Robenolt &lt;root@drund.com&gt;
+Copyright (c) 2012 Pablo Casado &lt;p.casado.arias@gmail.com&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
